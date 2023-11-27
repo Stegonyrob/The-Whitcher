@@ -1,32 +1,55 @@
+<script setup>
+import { ref } from 'vue';
+import { useBookStore } from '@/stores/booksStore';
 
-<script>
-import { useBookStore } from '@/stores/bookStore';
-import BookCard from './components/BookCard.vue';
+const bookStore = useBookStore();
+const books = bookStore.books;
+const showDescription = ref(null);
 
-export default {
- components: {
-  BookCard
- },
- setup() {
-  const bookStore = useBookStore();
-
-  return {
-    bookStore
-  };
- }
+function toggleDescription(index) {
+  showDescription.value = showDescription.value === index ? null : index;
 }
 </script>
-
 <template>
-    <div>
-     <BookCard 
-       v-for="book in bookStore.books" 
-       :key="book.number" 
-       :bookImage="book.image" 
-       :sagaTitle="book.sagaTitle" 
-       :bookTitle="book.title" 
-       :bookNumber="book.number"
-     />
+  <div class="books">
+    <div class="book-cards">
+      <div v-for="(book, index) in books" :key="index" class="book-card">
+        <img :src="book.image" :alt="book.title" @click="toggleDescription(index)">
+        <div v-if="showDescription === index">
+          <div>{{ book.description }}</div>
+        </div>
+        <h5>{{ book.sagaTitle }} - {{ book.number }}</h5>
+        <h6>{{ book.title }}</h6>
+      </div>
     </div>
-   </template>
-   
+  </div>
+</template>
+
+
+
+<style scoped>
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.book-card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  max-width: 90px;
+  cursor: pointer;
+}
+
+h5, h6 {
+  font-size: small;
+}
+</style>
