@@ -25,6 +25,7 @@ const review = reviewStore.review;
     display: inline-flex;
     margin-left: 10%;
     margin-bottom: 3rem;
+    width: 80%;
 }
 .card-title{
     margin-left: 35%;
@@ -33,15 +34,12 @@ const review = reviewStore.review;
 .card-text{
     margin-top: 3rem;
     text-align: justify;
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 8%;
+    margin-right: 2%;
 }
 .img-fluid{
-margin-top: 3rem;
+margin-top: 7.5rem;
 height: 70%;
 }
 
-    
-  
-
-</style>
+ </style>
