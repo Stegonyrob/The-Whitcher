@@ -2,7 +2,8 @@
 import { defineStore } from 'pinia';
 import { reactive } from 'vue';
 
-export const useBookStore = defineStore('book', () => {
+export const useBookStore = defineStore('book', 
+() => {
  const books = reactive(
   [
      {

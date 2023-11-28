@@ -15,11 +15,12 @@ function toggleDescription(index) {
     <div class="book-cards">
       <div v-for="(book, index) in books" :key="index" class="book-card">
         <img :src="book.image" :alt="book.title" @click="toggleDescription(index)">
+        <h5>{{ book.sagaTitle }} - {{ book.number }}</h5>
+        <h6>{{ book.title }}</h6>
         <div v-if="showDescription === index">
           <div>{{ book.description }}</div>
         </div>
-        <h5>{{ book.sagaTitle }} - {{ book.number }}</h5>
-        <h6>{{ book.title }}</h6>
+       
       </div>
     </div>
   </div>

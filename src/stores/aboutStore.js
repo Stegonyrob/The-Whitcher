@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia';
-
-export const useBookStore = defineStore('book', {
-  state: () => ({
-    author: {
+import { reactive } from 'vue';
+export const useAboutStore = defineStore('about', () => {
+  const about =reactive (
+    [
+    {
       name: 'Andrzej Sapkowski',
       image: './src/assets/img/author.png',
       bio: 'Andrzej Sapkowski (Łódź; 21 de junio de 1948) es un escritor polaco de fantasía heroica. Sus obras están fuertemente influenciadas por la cultura y mitología eslavas, así como por las narraciones tradicionales.',
@@ -11,5 +12,7 @@ export const useBookStore = defineStore('book', {
       tirt:' Recientemente llegó a la gran plataforma de streaming Netflix, con The Witcher donde su popularidad no ha hecho más que crecer desde su estreno.',
 },
 
-  })
+])
+return {
+    about}
 });
