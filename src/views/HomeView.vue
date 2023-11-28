@@ -14,15 +14,15 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img src="" class="d-block w-100 h-auto"
+          <img src="../assets/img/thewitcher19.jpg" class="d-block w-100"
             alt="Henry Cavill background">
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/5780636-witcher-3-wild-hunt-hd-wallpapers.jpg" class="d-block w-100 h-auto"
+          <img src="../assets/img/5780636-witcher-3-wild-hunt-hd-wallpapers.jpg" class="d-block w-100"
             alt="Henry Cavill background">
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/witcher_3___wild_hunt-wallpaper-3554x1999.jpg" class="d-block w-100 h-auto"
+          <img src="../assets/img/witcher_3___wild_hunt-wallpaper-3554x1999.jpg" class="d-block w-100"
             alt="Henry Cavill background">
         </div>
       </div>
@@ -54,6 +54,7 @@
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
 
 </style>
