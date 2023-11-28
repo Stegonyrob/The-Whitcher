@@ -1,8 +1,9 @@
 <template>
-    <div class="news">
-      <h1>This is an news page</h1>
-    </div>
+     <body>
+      <!-- <div class="bg-image" style="background-image: url('');"</div> -->
+     </body>
   </template>
+  
   
   <style>
   
