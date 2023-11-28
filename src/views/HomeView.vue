@@ -14,11 +14,11 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img src="../assets/img/5780636-witcher-3-wild-hunt-hd-wallpapers.jpg" class="d-block w-100 h-auto"
+          <img src="" class="d-block w-100 h-auto"
             alt="Henry Cavill background">
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/henry_cavill_4k_hd_the_witcher.jpg" class="d-block w-100 h-auto"
+          <img src="../assets/img/5780636-witcher-3-wild-hunt-hd-wallpapers.jpg" class="d-block w-100 h-auto"
             alt="Henry Cavill background">
         </div>
         <div class="carousel-item">
