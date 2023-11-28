@@ -40,7 +40,7 @@
         <div class="card-body">
           <h5 class="card-title ">Descubre más sobre nosotros</h5>
 
-          <a href="#" class="btn btn-primary">Mostrar</a>
+          <a href="#" class="btn btn-primary mb-4">Mostrar</a>
         </div>
         <div class="card-footer text-muted h-50">
           2 days ago
