@@ -6,9 +6,14 @@ import 'bootstrap'
 
 <template>
   <section>
+
+    
+
     <div id="carouselBackground" class="carousel slide">
 
+
       <div class="carousel-inner">
+
         <div class="carousel-item active">
           <img src="../assets/img/5780636-witcher-3-wild-hunt-hd-wallpapers.jpg" class="d-block w-100 h-auto"
             alt="Henry Cavill background">
@@ -22,6 +27,7 @@ import 'bootstrap'
             alt="Henry Cavill background">
         </div>
       </div>
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselBackground" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -30,10 +36,25 @@ import 'bootstrap'
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      <div class="card text-center bg-secondary">
+
+        <div class="card-body">
+          <h5 class="card-title ">Descubre más sobre nosotros</h5>
+
+          <a href="#" class="btn btn-primary">Mostrar</a>
+        </div>
+        <div class="card-footer text-muted h-50">
+          2 days ago
+        </div>
+      </div>
       
     </div>
-    <p class="text-center">Center aligned text on all viewport sizes.</p>
-    
+
+
 
   </section>
 </template>
+
+<style lang="scss">
+
+</style>
