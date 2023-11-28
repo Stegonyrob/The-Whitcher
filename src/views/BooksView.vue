@@ -7,7 +7,7 @@ import 'bootstrap'
 <template>
     <div class="books ">
         <CardReview/>
-          <CardBook/>
+        <CardBook/>
     </div>
   </template>
   
