@@ -10,14 +10,14 @@ const about = aboutStore.about;
         <div class="row g-0 mt-2">
           <div class="col-3 mt-5">
             <div v-for="(about, index) in about" :key="index">
-              <img :src="about.image" class="card-img col-sm-3 mt-1 rounded" :alt="about.name" style="object-fit: cover;">
+              <img :src="about.image" class="card-img col-sm-3 mt-5 rounded" :alt="about.name" style="object-fit: cover;">
             </div>
           </div>
           <div class="col-md-6">
             <div v-for="(about, index) in about" :key="index">
               <div class="card-body" style="text-align: justify;">
                 <h2 class="card-name ms-5 mt-5 mb-3">{{ about.name }} </h2>
-                <p class="card-bio ms-2 mt-5">{{ about.bio }}</p>
+                <p class="card-bio  mt-5">{{ about.bio }}</p>
               </div>
             </div>
           </div>
@@ -28,10 +28,10 @@ const about = aboutStore.about;
   
   <style scoped lang="scss">
   .container {
-    margin-top: -40rem;
-    margin-left: 20rem;
+    
+    margin-left: 30rem;
     width: 90%;
-    z-index: 5;
+    z-index: 800;
     .card-body{
         color: azure;
     }

@@ -7,6 +7,7 @@ import CardAbout from '../components/about/CardAbout.vue';
     <div class="video-wrapper">
       <video autoplay loop muted>
         <source src="../assets/img/the-witcher-3-white-wolf-desktop-wallpaperwaifu-com.mp4" type="video/mp4">
+        <source src="../assets/img/the-witcher-3-white-wolf-desktop-wallpaperwaifu-com.mp4" type="video/mp4">
       </video>
     
     
@@ -15,25 +16,20 @@ import CardAbout from '../components/about/CardAbout.vue';
 </div>
  </template>
 
-<style lang="scss">
-.video-background {
-  position: relative;
-  width: 100%;
+
+<style scoped>
+video{
+  z-index: -1000;
+  left: 50%;
+  width: 100vw;
   height: 100vh;
-  overflow: hidden;
-}
-
-.video-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-wrapper video {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
+    
 </style>
