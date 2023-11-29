@@ -10,7 +10,7 @@ export default {
       <div class="row-auto d-flex justify-content-between align-items-center">
         
            <div>
-             <a href="https://github.com" class="me-4 text-reset" target="_blank">
+             <a href="https://github.com/Stegonyrob/The-Whitcher.git" class="me-4 text-reset" target="_blank">
                <i class="bi bi-github"></i>
              </a>
              <a href="https://www.tiktok.com" class="me-4 text-reset" target="_blank" >
