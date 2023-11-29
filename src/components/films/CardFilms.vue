@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue';
-import { useFilmStore } from '@/stores/filmStore';
+import { usefilmStore } from '@/stores/filmsStore';
 
-const filmStore = useFilmStore();
-const film = filmStore.film;
+const filmStore = usefilmStore();
+const films = filmStore.films;
 const showDescription = ref(null);
 
 function toggleDescription(index) {
@@ -11,14 +11,14 @@ function toggleDescription(index) {
 }
 </script>
 <template>
-  <div class="film">
+  <div class="films">
     <div class="film-cards">
-      <div v-for="(film, index) in film" :key="index" class="film-card">
+      <div v-for="(film, index) in films" :key="index" class="film-card">
         <img :src="film.image" :alt="film.title" @click="toggleDescription(index)">
         <h5>{{ film.sagaTitle }} - {{ film.number }}</h5>
         <h6>{{ film.title }}</h6>
         <div v-if="showDescription === index">
-          <div>{{ film.description }}</div>
+          <div class="pBond">{{ film.description }}</div>
         </div>
        
       </div>
@@ -30,8 +30,6 @@ function toggleDescription(index) {
 
 <style scoped>
 .film-cards {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 5rem;
 }
@@ -39,9 +37,10 @@ function toggleDescription(index) {
 .film-card {
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  text-align: center;
+  background-color: rgba(124, 124, 124, 0.4);
+  
+
+  
 }
 
 .film-card img {
@@ -51,6 +50,10 @@ function toggleDescription(index) {
 }
 
 h5, h6 {
-  font-size: small;
+  font-size: medium;
+  font-weight: bold;
+}
+.pBond{
+  font-weight: bold;
 }
 </style>
