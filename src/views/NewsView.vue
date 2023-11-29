@@ -1,10 +1,17 @@
+<script setup>
+import NewsContainer from '../components/NewsContainer.vue';
+</script>
+
 <template>
-    <div class="news">
-      <h1>This is an news page</h1>
-    </div>
-  </template>
+  <NewsContainer />
+</template>
   
-  <style>
   
-  </style>
+<style>
+body {
+  background-image: url(../assets/img/2052712.jpg);
+  background-size: cover;
+  background-position: center;
+}
+</style>
   
