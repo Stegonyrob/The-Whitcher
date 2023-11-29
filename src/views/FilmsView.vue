@@ -1,10 +1,20 @@
+<script setup >
+
+import CardFilms from '../components/films/CardFilms.vue';
+
+</script>
 <template>
-    <div class="films">
-      <h1>This is an films page</h1>
+    <div class="films ">
+       
+        <CardFilms />
     </div>
   </template>
   
   <style>
-  
-  </style>
+  body{
+      background-image: url(./src/assets/img/wallpaperbetter.jpg);
+      background-size: cover;
+      background-position: center;
+      }
+ </style>
   
