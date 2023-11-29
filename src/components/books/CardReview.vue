@@ -8,8 +8,7 @@ const review = reviewStore.review;
 <template>
     <div class="review-card row g-0 col-md-6">
         <div class="card bg-transparent " >
-            
-                 <div v-for="(review, index) in review" :key="index" class="review-card">
+                <div v-for="(review, index) in review" :key="index" class="review-card">
                  <img :src="review.image" class="img-fluid rounded-start" :alt="review.title">
                  <div>
                     <h5 class="card-title">{{ review.title }} </h5>
