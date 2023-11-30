@@ -12,7 +12,7 @@
 
 - Es un proyecto desarrollado en Vue.js 3, usando Pinia, Vue Router, Boostrap 5 y Sass.
 ## Capturas de Pantalla
-<img src="/src/assets/img/capturas/home.png">
+<img src="src/assets/img/capturas/Home.png">
 
 ## Recommended IDE Setup
 
