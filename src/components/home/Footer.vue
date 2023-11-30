@@ -25,7 +25,7 @@ export default {
            </div>
     
            <p class="text-center p-2" >
-             © 2023 Copyright:
+             © 2023 Copyright:Derechos Reservados de The Witcher
              <a class="text-dark" href="#">Your Website</a>
            </p>
     
