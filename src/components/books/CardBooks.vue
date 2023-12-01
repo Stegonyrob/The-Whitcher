@@ -28,13 +28,13 @@ function toggleDescription(index) {
 
 
 
-<style scoped>
+<style scoped lang="scss">
 .book-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 5rem;
-}
+
 
 .book-card {
   margin: 1rem;
@@ -52,5 +52,5 @@ function toggleDescription(index) {
 
 h5, h6 {
   font-size: small;
-}
+}}
 </style>

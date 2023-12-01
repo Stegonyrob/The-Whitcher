@@ -6,39 +6,30 @@ const reviewStore = useReviewStore();
 const review = reviewStore.review;
 </script>
 <template>
-    <div class="review-card row g-0 col-md-6">
-        <div class="card bg-transparent " >
-                <div v-for="(review, index) in review" :key="index" class="review-card">
-                 <img :src="review.image" class="img-fluid rounded-start" :alt="review.title">
+    <div class="review bg-transparent ">
+    <div >
+                      <div v-for="(review, index) in review" :key="index" class="review-card">
+                 <img :src="review.image" class="rounded-start" :alt="review.title">
                  <div>
-                    <h5 class="card-title">{{ review.title }} </h5>
-                     <p class="card-text">{{ review.text }}</p>
+                    <h5 >{{ review.title }} </h5>
+                     <div>{{ review.text }}</div>
                     </div>
                     </div>
-            </div>
-   
+           
+        </div>
     </div>
 </template>
-<style>
+<style lang="scss" scoped>
 .review-card{
-    display: inline-flex;
-    margin-left: 10%;
-    margin-bottom: 3rem;
-    width: 80%;
-}
-.card-title{
-    margin-left: 35%;
-    margin-top: 3rem;
-}
-.card-text{
-    margin-top: 3rem;
-    text-align: justify;
-    margin-left: 8%;
-    margin-right: 2%;
-}
-.img-fluid{
-margin-top: 7.5rem;
-height: 70%;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  text-align: center;
 
+}
  </style>
