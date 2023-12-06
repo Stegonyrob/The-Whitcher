@@ -13,6 +13,11 @@
 - Es un proyecto desarrollado en Vue.js 3, usando Pinia, Vue Router, Boostrap 5 y Sass.
 ## Capturas de Pantalla
 <img src="src/assets/img/capturas/Home.png">
+<img src="src/assets/img/capturas/books1.png">
+<img src="src/assets/img/capturas/books2.png">
+<img src="src/assets/img/capturas/films.png">
+<img src="src/assets/img/capturas/news.png">
+<img src="src/assets/img/capturas/about.png">
 
 ## Recommended IDE Setup
 
