@@ -1,44 +1,67 @@
 <script setup>
+import { ref } from 'vue';
 import { useAboutStore } from '@/stores/aboutStore';
 
 const aboutStore = useAboutStore();
 const about = aboutStore.about;
 </script>
 <template>
-    <div class="container  align-content-start me-5">
-      <div class="card ps-4 bg-transparent mb-3">
-        <div class="row g-0 mt-2">
-          <div class="col-2 mt-5">
-            <div v-for="(about, index) in about" :key="index">
-              <img :src="about.image" class="card-img col-sm-3 mt-5 rounded" :alt="about.name" style="object-fit: cover;">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div v-for="(about, index) in about" :key="index">
-              <div class="card-body" style="text-align: justify;">
-                <h2 class="card-name ms-3 mt-4 mb-3">{{ about.name }} </h2>
-                <p class="card-bio  mt-3">{{ about.bio }}</p>
-              </div>
-            </div>
-          </div>
-        </div>      
-      </div>    
-    </div>      
-  </template>
-  
-  <style scoped lang="scss">
-  .container {
-    
-    margin-left: 20rem;
-    width: 100%;
-    z-index: 800;
-    .card-body{
-        color: azure;
-    }
-    .card-bio {
-    
-        margin-left: 2rem !important;
-    }
+  <div class="about">
+    <div class="about-cards">
+      <div v-for="(about, index) in about" :key="index" class="about-card">
+        <img :src="about.image" :alt="about.name" >
+                <h2>{{ about.name }}</h2>
+        <div >
+          <div class="bio">{{ about.bio }}</div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
+<style lang = "scss" scoped>
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-bottom: 5rem;
+.about-card {
+  padding: 2rem;
+  background-color: rgba(124, 124, 124, 0.4);
+  margin-left: 35%;
+  margin-right: 10%;
+  margin-top: 5%;
+  color: wheat;
+  text-align: justify ;
+  img {
+  width: 100%;
+  max-width: 10rem;
+  cursor: pointer;
+  float: left;
+  margin: 2rem;
+  h2{
+    margin-right: 10%;
   }
-  </style>
-  
+}
+}}
+@media (max-width: 426px) { 
+
+  .about-card {
+  padding: 1rem;
+  background-color: rgba(124, 124, 124, 0.4);
+  margin-left: 10%;
+  color: wheat;
+  text-align: justify ;
+  font-size: 0.5rem;
+  img {
+  width: 50%;
+  max-width: 6rem;
+  cursor: pointer;
+  float: left;
+  margin: 2rem;
+}
+ }}
+</style>
